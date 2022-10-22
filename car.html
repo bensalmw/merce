@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars website</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="im.png" class="logo">
+            <ul>
+                <li><a href="#" id="s500">S500</a></li>
+                <li><a href="#" id="s600">S600</a></li>
+                <li><a href="#" id="s600 maybach">S600 MAYBACH</a></li>
+                <li><a href="#" id="g63">G63</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 >1.5 s</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2>330 km</h2>
+                <p>top speed</p>
+            </div>
+            <div>
+                <h2>v8</h2>
+                <p>4600 nm</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="s">S500</h2>
+            </div>
+        </div>
+        
+<script>
+        
+
+    var header = document.getElementById("header");
+    var s5 = document.getElementById("s500");
+    var s6 = document.getElementById("s600");
+    var s6m = document.getElementById("s600 maybach");
+    var g63 = document.getElementById("g63");
+    var s = document.getElementById("s");
+    
+    s5.onclick = function(){
+        header.style.backgroundImage = "url(img.png)";
+        s.innerHTML = "S500"
+    }
+    s6.onclick = function(){
+        header.style.backgroundImage = "url(img1.png)";
+        s.innerHTML = "S600"
+    }
+    s6m.onclick = function(){
+        header.style.backgroundImage = "url(img2.png)";
+        s.innerHTML = "S600 MAYBACH"
+    }
+    g63.onclick = function(){
+        header.style.backgroundImage = "url(img3.png)";
+        s.innerHTML = "G63"
+    }
+
+</script>
+
+    </div>
+</body>
+</html>
